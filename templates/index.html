@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoolCare Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <button id="open-chatbot-btn" class="open-chatbot-btn">Chat with us!</button>
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chat-header">
+            <div class="chat-header-title">Hi there! 👋</div>
+            <div class="chat-header-subtitle">Powered by <strong>ReLUCI</strong></div>
+            <button id="close-chatbot-btn" class="close-chatbot-btn">&times;</button>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="message bot-message">
+                Hi, I'm PoolCare Assistant 🤖
+                <br>I can answer and solve all sorts of pool related questions and queries.
+            </div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chat-input" placeholder="Type a message...">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
